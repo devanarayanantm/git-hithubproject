@@ -22,7 +22,7 @@ var menu = []Menu{
 	{7, "Chhole Bhature", 45},
 	{8, "Khasta Kachori", 30},
 	{9, "Raj Kachori", 30},
-	{10, "Veg. Sandwich", 20},
+	{10, "Veg. Sandwich", 30},
 	{11, "Veg. Masala Maggi", 60.00},
 	{12, "Samosa", 20},
 	{13, "Pazhampori", 10}
