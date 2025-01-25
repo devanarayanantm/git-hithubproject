@@ -2,8 +2,8 @@ import { render, fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import RegistrationForm from './RegistrationForm';  // Adjust with the correct path to your component
 
-describe('User Registration Form with Bug', () => {
-  test('should show an error message for invalid email format with a spelling mistake', async () => {
+describe('User Registration Form without Bug', () => {
+  test('should show an error message for invalid email format with correct spelling', async () => {
     // Render the RegistrationForm component
     render(<RegistrationForm />);
     
@@ -17,10 +17,10 @@ describe('User Registration Form with Bug', () => {
     // Click the submit button
     fireEvent.click(submitButton);
     
-    // Check if the error message is displayed with the bug (spelling mistake)
-    const errorMessage = await screen.findByText(/please enter a vaild email address/i);
+    // Check if the error message is displayed with the correct spelling
+    const errorMessage = await screen.findByText(/please enter a valid email address/i);
     
-    // Assert that the error message with the typo is shown
+    // Assert that the error message with the correct spelling is shown
     expect(errorMessage).toBeInTheDocument();
   });
 });
