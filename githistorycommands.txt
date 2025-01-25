@@ -1,0 +1,36 @@
+  1   git clone 
+   2 git branch
+   3 ls
+   4 git push
+   5 git pull
+   6 :wq
+   7 git branch
+   8 git merge feature
+   9 git add .
+  10 git commit -m "Pushing Everything"
+  11 git merge feature
+  12 git pull
+  13 git push
+  14 gpg --full-generate-key
+  15 gpg --fullgenerate-key
+  16 gpg --full-generate-key
+  17 gpg branch
+  18 git branch
+  19 git push
+  20 git branch
+  21 git checkout feature-test
+  22 git checkout -b feature-test
+  23 code RegistrationForm.test.js
+  24 git push -u origin feature-test
+  25 git checkout -b bugfix(issue-1)
+  26 git checkout -b bugfix
+  27 git push -u origin bugfix
+  28 git tag -a v1.0 -m "First Version Released"
+  29 git checkout main
+  30 git log --oneline
+  31 git log
+  32 git checkout bugfix
+  33 ls
+  34 git log --oneline
+  35 git push --tags
+  36 git history
