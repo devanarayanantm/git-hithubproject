@@ -64,7 +64,7 @@ func printFinalBill() {
 	}
 	fmt.Println()
 
-	fmt.Printf("\n%52s\n", "JAIPUR BHOJANALYA")
+	fmt.Printf("\n%52s\n", "JAIPUR DHABHA")
 	time.Sleep(time.Millisecond * 200)
 	fmt.Printf("%s\n", strings.Repeat("*", 91))
 	time.Sleep(time.Millisecond * 200)
