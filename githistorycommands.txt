@@ -1,4 +1,4 @@
-   1 git clone 
+   1 try { . "c:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scri
    2 git branch
    3 ls
    4 git push
@@ -22,7 +22,6 @@
   22 git checkout -b feature-test
   23 code RegistrationForm.test.js
   24 git push -u origin feature-test
-  25 git checkout -b bugfix(issue-1)
   26 git checkout -b bugfix
   27 git push -u origin bugfix
   28 git tag -a v1.0 -m "First Version Released"
@@ -34,3 +33,206 @@
   34 git log --oneline
   35 git push --tags
   36 git history
+
+
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 3.00 KiB | 170.00 KiB/s, done.
+From github.com:devanarayanantm/git-hithubproject
+   8900894..77c0864  bugfix     -> origin/bugfix
+   35ac396..2aae7af  main       -> origin/main
+Updating 8900894..77c0864
+Fast-forward
+ githistorycommands.txt | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+ create mode 100644 githistorycommands.txt
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git push
+Everything up-to-date
+PS C:\Users\Administrator\ProjectGit\git-hithubproject>
+ *  History restored 
+
+  main
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git checkout main
+        githistorycommands.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git merge bugfix  
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git pull
+remote: Counting objects: 100% (1/1), done.
+Unpacking objects: 100% (1/1), 908 bytes | 302.00 KiB/s, done.
+   2aae7af..4750980  main       -> origin/main
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git branch 
+* bugfix
+  feature
+  feature-test
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git branch main
+fatal: a branch named 'main' already exists
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git merge bugfix
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git pull        
+Already up to date.
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git push
+Everything up-to-date
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git branch
+* bugfix
+  feature
+Merge branch 'main' of github.com:devanarayanantm/git-hithubproject
+  main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 6 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git merge bugfix 
+Updating 35ac396..6dcde1d
+Fast-forward
+ githistorycommands.txt   | 36 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 62 insertions(+)
+ create mode 100644 RegistrationForm.test.js
+ create mode 100644 githistorycommands.txt
+Merge made by the 'ort' strategy.
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git push
+Counting objects: 100% (1/1), done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:devanarayanantm/git-hithubproject.git
+   4750980..364d3ef  main -> main
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git branch     
+  bugfix
+  feature
+  feature-test
+* main
+Tracking "*.png"
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> ls -a
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directo
+-File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+ 
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git diff
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git add .
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git diff 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitattributes
+        new file:   png-fantasy-flower-neon-art-illustration_53876-607319.avif
+
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git commit -m "lfs doing png files are tracked"
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitattributes
+ create mode 100644 png-fantasy-flower-neon-art-illustration_53876-607319.avif
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 24.18 KiB | 3.45 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:devanarayanantm/git-hithubproject.git
+   364d3ef..7d2b05d  main -> main
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git status
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    png-fantasy-flower-neon-art-illustration_53876-607319.avif
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        png-fantasy-flower-neon-art-illustration_53876-607319.png.avif
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git add .
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   PNG_transparency_demonstration_1.png
+        deleted:    png-fantasy-flower-neon-art-illustration_53876-607319.avif
+
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git commit -m "lfs new image added"
+[main a4ca6b4] lfs new image added
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git push
+Uploading LFS objects: 100% (1/1), 177 KB | 0 B/s, done.
+Counting objects: 100% (4/4), done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+   7d2b05d..a4ca6b4  main -> main
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> code .\menu.go
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git add .
+[main c8f4cab] Menu update for conflict for pazhampori
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git checkout -b newconflict
+Switched to a new branch 'newconflict'
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git commit -m "Menu update in new branch for conflict for pazhampori and make diff value" 
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> git merge newconflict
+Updating c8f4cab..d6da640
+Fast-forward
+ menu.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Administrator\ProjectGit\git-hithubproject>
+                                                        git history
+git: 'history' is not a git command. See 'git --help'.
+PS C:\Users\Administrator\ProjectGit\git-hithubproject> history    
+
+  Id CommandLine
+  -- -----------
+   1 try { . "c:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\s...
+   2 git branch
+   3 git checkout main
+   4 git merge bugfix
+   5 git pull
+   6 git branch
+   7 git branch main
+   8 git merge bugfix
+   9 git pull
+  10 git push
+  11 git branch
+  12 git checkout main
+  13 git merge bugfix
+  14 git pull
+  15 git push
+  16 git branch
+  17 git lfs install
+  18 git lfs track "*.png"
+  19 ls -a
+  20 git diff
+  21 git add .
+  22 git diff
+  23 git status
+  24 git commit -m "lfs doing png files are tracked"
+  25 git push
+  26 git status
+  27 git add .
+  28 git status
+  29 git commit -m "lfs new image added"
+  30 git push
+  31 code .\menu.go
+  32 git add .
+  33 git commit -m "Menu update for conflict for pazhampori"
+  34 git checkout -b newconflict
+  35 code .\menu.go
+  36 git add .
+  37 git commit -m "Menu update in new branch for conflict for pazhampori and make diff value"
+  38 git checkout main
+  39 code menu.go
+  40 git checkout newconflict
+  41 code menu.go
+  42 git checkout main
+  43 git merge newconflict
+  44 git mergetools
+  45 git mergetool
+  46 git log --oneline
+  47 code menu.go
+  48 git merge newconflict
+  49 git history
