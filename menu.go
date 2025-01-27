@@ -25,7 +25,7 @@ var menu = []Menu{
 	{10, "Veg. Sandwich", 30},
 	{11, "Veg. Masala Maggi", 60.00},
 	{12, "Samosa", 20},
-	{13, "Pazhampori", 20}
+	{13, "Pazhampori", 15}
 	
 }
 
